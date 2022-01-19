@@ -34,7 +34,7 @@ const camera = new THREE.PerspectiveCamera(75,window.innerWidth / window.innerHe
 
 
   //avatar
-  const weertiTexture= new THREE.TextureLoader().load('ww.png')
+  const weertiTexture= new THREE.TextureLoader().load('w.png')
 
   const weerti = new THREE.Mesh(
     new THREE.BoxGeometry(3,3,3),

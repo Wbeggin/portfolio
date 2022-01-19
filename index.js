@@ -77,7 +77,7 @@ const camera = new THREE.PerspectiveCamera(75,window.innerWidth / window.innerHe
 
 
   // background
-  const spaceTexture = new THREE.TextureLoader().load('space.jpg')
+  const spaceTexture = new THREE.TextureLoader().load('space2.jpg')
   scene.background = spaceTexture
 
 

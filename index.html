@@ -19,7 +19,7 @@
         const calculatedAge = Math.abs(ageDate.getUTCFullYear() - 1970);
         return calculatedAge.toString(); // Convert the age to a string
       };
-
+    
       const ageSpan = document.getElementById('ageValue');
       const age = calculateAge();
       ageSpan.textContent = age;

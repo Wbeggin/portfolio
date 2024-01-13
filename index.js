@@ -4,14 +4,6 @@ import { OrbitControls } from "https://unpkg.com/three@0.127.0/examples/jsm/cont
 
 const scene = new THREE.Scene()
 
-const calculateAge = () => {
-  const today = new Date();
-  const birthDate = new Date(2000, 9, 24); 
-  const difference = today - birthDate;
-  const ageDate = new Date(difference);
-  const calculatedAge = Math.abs(ageDate.getUTCFullYear() - 1970);
-  return calculatedAge.toString()
-}
 
 // (args) FOV, aspect ratio, how near and long can you see relative to the camera.
 const camera = new THREE.PerspectiveCamera(75,window.innerWidth / window.innerHeight,

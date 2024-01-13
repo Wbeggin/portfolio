@@ -10,6 +10,21 @@
   <body>
     <canvas id="bg"></canvas>
 
+    <script>
+      const calculateAge = () => {
+        const today = new Date();
+        const birthDate = new Date(2000, 9, 24);
+        const difference = today - birthDate;
+        const ageDate = new Date(difference);
+        const calculatedAge = Math.abs(ageDate.getUTCFullYear() - 1970);
+        return calculatedAge.toString(); // Convert the age to a string
+      };
+
+      const ageSpan = document.getElementById('ageValue');
+      const age = calculateAge();
+      ageSpan.textContent = age;
+    </script>
+    
     <main>
 
       <header>
@@ -83,11 +98,6 @@
 
 
     </main>
-    <script>
-      const ageSpan = document.getElementById('ageValue');
-      const age = calculateAge();
-      ageSpan.textContent = age;
-  </script>
     <script type="module" src="./index.js"></script>
   </body>
 </html>

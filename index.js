@@ -10,7 +10,7 @@ const calculateAge = () => {
   const difference = today - birthDate;
   const ageDate = new Date(difference);
   const calculatedAge = Math.abs(ageDate.getUTCFullYear() - 1970);
-  return calculatedAge;
+  return calculatedAge.toString()
 }
 
 // (args) FOV, aspect ratio, how near and long can you see relative to the camera.

@@ -9,7 +9,11 @@
   </head>
   <body>
     <canvas id="bg"></canvas>
-
+    <script>
+      const ageSpan = document.getElementById('ageValue');
+      const age = calculateAge();
+      ageSpan.textContent = age;
+  </script>
     <main>
 
       <header>
@@ -38,12 +42,6 @@
         </p>
 
       </section>
-
-      <script>
-      const ageSpan = document.getElementById('ageValue');
-      const age = calculateAge();
-      ageSpan.textContent = age;
-    </script>
 
       <section class="light">
         <h2>👩🏽‍🚀 Projects</h2>

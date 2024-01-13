@@ -10,28 +10,6 @@
   <body>
     <canvas id="bg"></canvas>
 
-    <script>
-      window.calculateAge = () => {
-        const today = new Date();
-        const birthDate = new Date(2000, 9, 24);
-        const difference = today - birthDate;
-        const ageDate = new Date(difference);
-        const calculatedAge = Math.abs(ageDate.getUTCFullYear() - 1970);
-        return calculatedAge.toString(); // Convert the age to a string
-      };
-    
-      const ageSpan = document.getElementById('ageValue');
-      const age = calculateAge();
-      ageSpan.textContent = age;
-
-      document.addEventListener("DOMContentLoaded", function () {
-    const ageSpan = document.getElementById('ageValue');
-    const age = calculateAge();
-    ageSpan.textContent = age;
-  });
-      
-    </script>
-
     <main>
 
       <header>
@@ -50,6 +28,21 @@
         <p>
           I'm a  <span id="ageValue"></span> year old student studying information technology at the University of Jyväskylä.
         </p>
+
+        <script>
+          window.calculateAge = () => {
+            const today = new Date();
+            const birthDate = new Date(2000, 9, 24);
+            const difference = today - birthDate;
+            const ageDate = new Date(difference);
+            const calculatedAge = Math.abs(ageDate.getUTCFullYear() - 1970);
+            return calculatedAge.toString(); // Convert the age to a string
+          };
+        
+          const ageSpan = document.getElementById('ageValue');
+          const age = calculateAge();
+          ageSpan.innerHTML = age;
+        </script>
 
         <p>
           I enjoy web developing and would love to get better at it, this is my first published website.
